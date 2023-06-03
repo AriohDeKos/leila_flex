@@ -46,10 +46,41 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+:root{
+    --prime_txt_color:#ffffff;
+    --radius:20px;
+    --dop_txt_color:#121212;
+    --red: #f30242;
+    --width: 80%;
+    --regular-size:16px;
+}
 header{
     width: 100%;
     background: url(/images/bg.png) no-repeat;
     background-size: cover;
     background-position: center center;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.menu{
+    width: var(--width);
+    align-items: first baseline;
+    font-size: var(--regular-size);
+}
+.menu ul{
+display: flex;
+justify-content: space-between;
+}
+.menu li{
+
+}
+.menu a {
+    text-decoration: none;
+    color: var(--prime_txt_color);
 }
