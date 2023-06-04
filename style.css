@@ -142,11 +142,12 @@ margin-left: 20px;
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    align-items: center;
 }
 .form .text1 {
     border: 1px solid white;
     border-radius: 25px 0 0 25px;
-    padding: 10px 180px 10px 20px;
+    padding: 15px 180px 15px 20px;
     font-size: 1rem;
     color: var(--dop_txt_color);
 }
@@ -154,9 +155,57 @@ margin-left: 20px;
     border: 1px solid var(--red);
     border-radius: 0 25px 25px 0;
     background-color: var(--red);
-    padding: 10px 20px 10px 20px ;
+    padding: 15px 20px 15px 20px ;
     font-size: 0.8rem;
     color: var(--prime_txt_color);
     cursor: pointer;
 }
 .form .btn:active{ transform: scale(0.95);}
+
+.chat {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20vw;
+    margin: 30px auto;
+   }
+
+.chat .commit1{
+    border: none;
+    background-color: var(--prime_txt_color);
+    border-radius: var(--radius);
+    padding: 40px 0 40px 50px;
+    align-self: flex-start;
+    margin-top: 35px;
+    position: relative;
+    width: 12vw;
+}
+.chat .commit1::before{
+    content: '';
+    position: absolute;
+    background: url(/images/icon.png) no-repeat;
+    width: 35%; 
+    height: 100%;
+    left: -50px;
+    top: 10px;
+}
+.chat .commit2{
+    border: none;
+    background-color: var(--prime_txt_color);
+    border-radius: var(--radius);
+    padding: 40px 0 40px 40px;
+    align-self: flex-end;
+    margin-top: 35px;
+    position: relative;
+    width: 12vw;
+}
+.chat .commit2:after{
+    content: '';
+    position: absolute;
+    background: url(/images/4.png) no-repeat;
+    width: 35%;
+    height: 100%;
+    right: -70px;
+    top: 10px;
+}
