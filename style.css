@@ -74,17 +74,14 @@ header{
     display: flex;
     align-items: center;
 }
-
 .menu-list {
     display: flex;
     list-style-type: none;
     margin-left: auto;
     align-items: center;
 }
-
 .menu-list li{
 margin-left: 20px;
-
 }
 .menu-list a {
     text-decoration: none;
