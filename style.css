@@ -51,7 +51,7 @@ table {
     --radius:20px;
     --dop_txt_color:#121212;
     --red: #f30242;
-    --width: 80%;
+    --width: 90%;
     --regular-size:16px;
 }
 header{
@@ -74,9 +74,7 @@ header{
     display: flex;
     align-items: center;
 }
-.logo img{
-    margin-right: 10px;
-}
+
 .menu-list {
     display: flex;
     list-style-type: none;
@@ -85,13 +83,20 @@ header{
 }
 
 .menu-list li{
-margin-left: 10px;
+margin-left: 20px;
+
 }
 .menu-list a {
     text-decoration: none;
     color: var(--prime_txt_color);
 }  
 .menu-list .btn{
-    padding: 10px 30px;
-    
+    padding: 10px 20px ;
+    border:2px solid var(--red);
+    border-radius:var(--radius);
+    color: var(--red);
 } 
+.menu-list .btn:hover {
+    color: var(--prime_txt_color);
+    background-color: var(--red);
+}
