@@ -51,7 +51,7 @@ table {
     --prime_txt_color:#ffffff;
     --radius:20px;
     --dop_txt_color:#121212;
-    --red: #f30242;
+    --red: #da4d6c;
     --width: 90%;
     --regular-size:16px;
 }
@@ -69,7 +69,8 @@ header{
 }
 .menu{
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    flex-wrap: nowrap;
 }
 .logo{
     display: flex;
@@ -122,9 +123,10 @@ margin-left: 20px;
     align-self: center;
     color: var(--prime_txt_color);
     font-size: 2rem;
-    margin-top: 10vh;
-    font-weight: 300;
+    margin-top: 20vh;
+    font-weight: 400;
     letter-spacing: 2px;
+    text-align: center;
 }
 .text{
     display: flex;
@@ -132,17 +134,18 @@ margin-left: 20px;
     align-self: center;
     text-align: center;
     margin-top: 10px;
-    color: var(--prime_txt_color);
+    color: #f6f6f6;
     font-size: 14px;
-    font-weight: 200;
+    font-weight:300;
     line-height: 1.5;
     letter-spacing: 1px;
 }
 .form{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
     align-items: center;
+    width: 50%;
+    margin: 5vh auto;
 }
 .form .text1 {
     border: 1px solid white;
@@ -156,18 +159,17 @@ margin-left: 20px;
     border-radius: 0 25px 25px 0;
     background-color: var(--red);
     padding: 15px 20px 15px 20px ;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--prime_txt_color);
     cursor: pointer;
 }
 .form .btn:active{ transform: scale(0.95);}
 
 .chat {
-    display: flex;
+    display:  flex;
     justify-content: space-between;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 20vw;
+    width: 25vw;
     margin: 30px auto;
    }
 
@@ -179,7 +181,7 @@ margin-left: 20px;
     align-self: flex-start;
     margin-top: 35px;
     position: relative;
-    width: 12vw;
+    width: 300px;
 }
 .chat .commit1::before{
     content: '';
@@ -188,7 +190,8 @@ margin-left: 20px;
     width: 35%; 
     height: 100%;
     left: -50px;
-    top: 10px;
+    top: 5px;
+    z-index: 99999;
 }
 .chat .commit2{
     border: none;
@@ -198,14 +201,15 @@ margin-left: 20px;
     align-self: flex-end;
     margin-top: 35px;
     position: relative;
-    width: 12vw;
+    width: 300px;
 }
-.chat .commit2:after{
+.chat .commit2::after{
     content: '';
     position: absolute;
     background: url(/images/4.png) no-repeat;
-    width: 35%;
+    width: 36%;
     height: 100%;
     right: -70px;
-    top: 10px;
+    top: 5px;
+    z-index: 666;
 }
